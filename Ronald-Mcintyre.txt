@@ -121,20 +121,27 @@
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+        Block elements generally cause a line break unlike inline elements, and take up the full width of the page. 
+        inline elements only take up the space defined by their closing and opening tags, and do not cause line breaks. 
 
 
-    2. What happens when an eleme nt ispositioned absolutely? 
-
+    2. What happens when an element is positioned absolutely? 
+        An element with absolute positioning is removed from all other positioning, and is placed in the top left of its parent element, or top left of the doc if there is no parent. 
+        This allows the element to be placed with no regards to anything else. 
 
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
-    
+        Margin: 0 auto; would allow you to make the element take up only the space is needs.
+        Then you could do padding: 0 5%; to add a width to it. I believe anyway. 
 
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
-   
+        Block elements = <header> <footer> <div>
+        inline elements = <a> <img>
 
     5. In your own words, explain the box model. What is the fix for the box model? 
-
-
+        The box model comprises all of the elements that make up an element. This includes the actual content, the padding, board, and margin in that order. 
+        This means that while your content might be 200 px tall there will be invisible padding which might be 20 px on top and bottom, a border which might be 5px on top and bottom, and last a margin which say is 15px top and bottom. 
+        Adding this all together 200 + 20 + 20 + 5 + 5 + 15 + 15 = 280px total in height. You would do similar for the width. 
+        All of these can be controlled and adjusted independently for good customization. 
 
 
 Link to codepen:
